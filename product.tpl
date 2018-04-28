@@ -370,22 +370,6 @@
         <?php } ?>
         <?php } ?>
      </div>
-
-    <div class="description">
-    <?php if ($product_shippings) { ?>
-    <span class="contrast_font"><?php echo "Shipping: " ; ?> </span> <br />
-    <?php foreach ($product_shippings as $product_shipping) { ?>
-        <?php foreach ($couriers as $courier) { ?>
-        <?php if ($courier['courier_id'] == $product_shipping['courier_id']) { ?>
-            <span class="contrast_font"><?php echo $courier['courier_name']; ?> </span>
-    <?php break; } ?>
-    <?php } ?>
-        <?php echo " $"; ?>
-        <?php echo $product_shipping['shipping_rate']; ?> <br />
-    
-    <?php } ?>    
-    <?php } ?>    
-     </div>
          
      <div class="share">
      <?php if($cosyone_product_share == 'content'){ ?>
