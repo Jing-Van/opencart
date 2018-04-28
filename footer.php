@@ -45,7 +45,7 @@ class ControllerCommonFooter extends Controller {
 		$data['special'] = $this->url->link('product/special');
 		$data['vendor'] = $this->url->link('product/vendor');
 		$data['seller_sign_up'] = $this->url->link('account/signup', '', 'SSL');
-		$data['seller_login'] = HTTP_SERVER . 'admin';
+		$data['seller_login'] = HTTP_SERVER . '';  /* changed the new url here */
 		$data['account'] = $this->url->link('account/account', '', 'SSL');
 		$data['order'] = $this->url->link('account/order', '', 'SSL');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
